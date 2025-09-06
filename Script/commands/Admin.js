@@ -22,8 +22,8 @@ module.exports.run = async function({ api, event }) {
 ┌───────────────⭓
 │ 𝗢𝗪𝗡𝗘𝗥 𝗗𝗘𝗧𝗔𝗜𝗟𝗦
 ├───────────────
-│ 👤 𝐍𝐚𝐦𝐞 : 𝐍𝐤 𝐍𝐚𝐢𝐞𝐦 𝐊𝐡𝐚𝐧
-│ 🚹 𝐆𝐞𝐧𝐝𝐞𝐫 : 𝐌𝐚𝐥𝐞
+│ 👤 𝐍𝐚𝐦𝐞 : 𝐌𝐞𝐰 𝐐𝐮𝐞𝐞𝐧
+│ 🚹 𝐆𝐞𝐧𝐝𝐞𝐫 : Female
 │ ❤️ 𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧 : 𝐒𝐢𝐧𝐠𝐥𝐞
 │ 🎂 𝐀𝐠𝐞 : 𝟏𝟖+
 │ 🕌 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧 : 𝐈𝐬𝐥𝐚𝐦
@@ -35,9 +35,9 @@ module.exports.run = async function({ api, event }) {
 │ 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗟𝗜𝗡𝗞𝗦
 ├───────────────
 │ 📘 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸:
-│ https://www.facebook.com/nk.naiem.khan.641816
+│ 
 │ 💬 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽:
-│ 01908143017
+│ 
 └───────────────⭓
 
 ┌───────────────⭓
@@ -49,7 +49,7 @@ module.exports.run = async function({ api, event }) {
  attachment: fs.createReadStream(__dirname + "/cache/owner.jpg")
  }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/owner.jpg"));
 
- return request("https://i.imgur.com/UpqU1E1.jpeg")
+ return request("https://i.imgur.com/umDpfpk.jpeg")
  .pipe(fs.createWriteStream(__dirname + '/cache/owner.jpg'))
  .on('close', () => callback());
 };
